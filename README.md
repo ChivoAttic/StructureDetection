@@ -1,4 +1,6 @@
-StructureDetection
+Structure Detection in Astronomical image
 ==================
 
-Tools for structure detection in astronomical images
+Run:
+
+$python detections.py <image_test.fits>
