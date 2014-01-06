@@ -18,5 +18,5 @@ Optionally you can install the following packages:
 
 Run:
 
-$python detections.py \<image_test1.fits\> + ... +\<image_testN.fits\>
+$python detection.py \<image_test1.fits\> + ... +\<image_testN.fits\>
 
