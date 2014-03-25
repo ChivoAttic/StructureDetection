@@ -19,9 +19,20 @@ class VisorPreview(QtGui.QWidget):
     def __init__(self, k , Nlevel, CurrentPath, CurrentFile, parent = None):
         QtGui.QWidget.__init__(self, parent)
 
-
         self.ui = visp()
         self.ui.setupUi(self)
+
+        self.CurrentFile = CurrentFile
+        self.CurrentPath = CurrentPath
+        self.K = k
+        self.Nlevel = Nlevel
+
+        self.ui.spinBoxK.setValue(k)
+        self.ui.spinBoxNiveles.setValue(Nlevel)
+
+    def Cancelar(self):
+        self.hide()
+
 
 class AppIntro(QtGui.QMainWindow):
 
@@ -44,10 +55,9 @@ class AppIntro(QtGui.QMainWindow):
         N = self.ui.spinBoxLevel.value()
         Path = str(self.ui.PathLine.text())
         File = os.path.basename(Path)
-
         self.Visor = VisorPreview(K,N,Path,File)
         self.Visor.show()
-
+        self.hide()
 
 
 
@@ -56,6 +66,6 @@ if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
     Aperture = AppIntro()
     Aperture.show()
-    #visor = VisorPreview(Aperture.K, Aperture.Nlevel, Aperture.CurrentPath, Aperture.CurrentFile)
+
 
     sys.exit(app.exec_())
