@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'Intro.ui'
 #
-# Created: Fri Mar 21 12:34:53 2014
+# Created: Tue Mar 25 15:20:18 2014
 #      by: PyQt4 UI code generator 4.10
 #
 # WARNING! All changes made in this file will be lost!
@@ -31,15 +31,15 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.gridLayout = QtGui.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
-        self.pushButton = QtGui.QPushButton(self.centralwidget)
-        self.pushButton.setObjectName(_fromUtf8("pushButton"))
-        self.gridLayout.addWidget(self.pushButton, 0, 3, 1, 1)
+        self.ButtonBuscar = QtGui.QPushButton(self.centralwidget)
+        self.ButtonBuscar.setObjectName(_fromUtf8("ButtonBuscar"))
+        self.gridLayout.addWidget(self.ButtonBuscar, 0, 3, 1, 1)
         self.label_2 = QtGui.QLabel(self.centralwidget)
         self.label_2.setObjectName(_fromUtf8("label_2"))
         self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
-        self.pushButton_2 = QtGui.QPushButton(self.centralwidget)
-        self.pushButton_2.setObjectName(_fromUtf8("pushButton_2"))
-        self.gridLayout.addWidget(self.pushButton_2, 1, 3, 1, 1)
+        self.ButtonCargar = QtGui.QPushButton(self.centralwidget)
+        self.ButtonCargar.setObjectName(_fromUtf8("ButtonCargar"))
+        self.gridLayout.addWidget(self.ButtonCargar, 1, 3, 1, 1)
         self.PathLine = QtGui.QLineEdit(self.centralwidget)
         self.PathLine.setReadOnly(True)
         self.PathLine.setObjectName(_fromUtf8("PathLine"))
@@ -78,9 +78,9 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", None))
-        self.pushButton.setText(_translate("MainWindow", "Buscar", None))
+        self.ButtonBuscar.setText(_translate("MainWindow", "Buscar", None))
         self.label_2.setText(_translate("MainWindow", "N° de Niveles", None))
-        self.pushButton_2.setText(_translate("MainWindow", "Cargar", None))
+        self.ButtonCargar.setText(_translate("MainWindow", "Cargar", None))
         self.label.setText(_translate("MainWindow", "Ubicacion Archivo", None))
         self.label_3.setText(_translate("MainWindow", "K", None))
 

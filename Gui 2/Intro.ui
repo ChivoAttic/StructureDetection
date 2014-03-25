@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="3">
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="ButtonBuscar">
       <property name="text">
        <string>Buscar</string>
       </property>
@@ -30,7 +30,7 @@
      </widget>
     </item>
     <item row="1" column="3">
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="ButtonCargar">
       <property name="text">
        <string>Cargar</string>
       </property>
